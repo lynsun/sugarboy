@@ -7,5 +7,13 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "lynsun",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lynsun/sugarboy.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lynsun/sugarboy/issues"
+  },
+  "homepage": "https://github.com/lynsun/sugarboy#readme"
 }
