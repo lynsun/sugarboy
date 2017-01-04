@@ -4,7 +4,8 @@
   "description": "sugarboy test",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config build/webpack.config.js --progress"
   },
   "author": "lynsun",
   "license": "ISC",
@@ -20,6 +21,7 @@
   },
   "homepage": "https://github.com/lynsun/sugarboy#readme",
   "devDependencies": {
-    "lerna": "2.0.0-beta.31"
+    "lerna": "2.0.0-beta.31",
+    "webpack": "^2.2.0-rc.3"
   }
 }

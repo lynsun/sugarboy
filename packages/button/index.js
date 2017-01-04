@@ -1,3 +1,3 @@
-var button = require('./src');
+var button = require('./src/button');
 
 module.exports = button
