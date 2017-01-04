@@ -1,4 +1,14 @@
-/******/ (function(modules) { // webpackBootstrap
+(function webpackUniversalModuleDefinition(root, factory) {
+	if(typeof exports === 'object' && typeof module === 'object')
+		module.exports = factory();
+	else if(typeof define === 'function' && define.amd)
+		define([], factory);
+	else if(typeof exports === 'object')
+		exports["button"] = factory();
+	else
+		root["button"] = factory();
+})(this, function() {
+return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
 
@@ -70,20 +80,26 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
+"use strict";
+
+
 var button = __webpack_require__(1);
 
-module.exports = button
+module.exports = button;
 
 /***/ },
 /* 1 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+
 
 module.exports = {
-	echo: function(){
+	echo: function echo() {
 		console.log('i am a button');
 	}
-}
-
+};
 
 /***/ }
 /******/ ]);
+});
