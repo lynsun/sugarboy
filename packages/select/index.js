@@ -1,3 +1,3 @@
-var button = require('./src/select');
+var select = require('./src/select');
 
-module.exports = button
+module.exports = select
