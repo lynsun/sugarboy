@@ -17,6 +17,10 @@ module.exports = {
       {
         test: /\.(js)$/, use: 'babel-loader'
       }
-    ]
+    ],
+    externals: {
+      'sugar-button':'sugar-button',
+      'sugar-select':'sugar-select'
+    }
   }
 }
