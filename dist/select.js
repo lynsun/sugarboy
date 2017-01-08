@@ -7,7 +7,7 @@
 		exports["select"] = factory(require("sugar-button"));
 	else
 		root["select"] = factory(root["sugar-button"]);
-})(this, function(__WEBPACK_EXTERNAL_MODULE_4__) {
+})(this, function(__WEBPACK_EXTERNAL_MODULE_2__) {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -73,7 +73,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	__webpack_require__.p = "";
 
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -84,7 +84,7 @@ return /******/ (function(modules) { // webpackBootstrap
 "use strict";
 
 
-var button = __webpack_require__(4);
+var button = __webpack_require__(2);
 
 module.exports = {
 	echo: function echo() {
@@ -94,8 +94,14 @@ module.exports = {
 };
 
 /***/ },
-/* 2 */,
-/* 3 */
+/* 2 */
+/***/ function(module, exports) {
+
+module.exports = __WEBPACK_EXTERNAL_MODULE_2__;
+
+/***/ },
+/* 3 */,
+/* 4 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -104,12 +110,6 @@ module.exports = {
 var select = __webpack_require__(1);
 
 module.exports = select;
-
-/***/ },
-/* 4 */
-/***/ function(module, exports) {
-
-module.exports = __WEBPACK_EXTERNAL_MODULE_4__;
 
 /***/ }
 /******/ ]);

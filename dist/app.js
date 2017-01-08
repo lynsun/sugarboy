@@ -1,13 +1,13 @@
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
-		module.exports = factory(require("sugar-button"));
+		module.exports = factory();
 	else if(typeof define === 'function' && define.amd)
-		define(["sugar-button"], factory);
+		define([], factory);
 	else if(typeof exports === 'object')
-		exports["app"] = factory(require("sugar-button"));
+		exports["app"] = factory();
 	else
-		root["app"] = factory(root["sugar-button"]);
-})(this, function(__WEBPACK_EXTERNAL_MODULE_4__) {
+		root["app"] = factory();
+})(this, function() {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -73,11 +73,33 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	__webpack_require__.p = "";
 
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 5);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var button = __webpack_require__(2);
+
+module.exports = button;
+
+/***/ },
+/* 1 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var select = __webpack_require__(3);
+
+module.exports = select;
+
+/***/ },
+/* 2 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -90,13 +112,13 @@ module.exports = {
 };
 
 /***/ },
-/* 1 */
+/* 3 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var button = __webpack_require__(4);
+var button = __webpack_require__(0);
 
 module.exports = {
 	echo: function echo() {
@@ -106,42 +128,14 @@ module.exports = {
 };
 
 /***/ },
-/* 2 */
+/* 4 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 var button = __webpack_require__(0);
-
-module.exports = button;
-
-/***/ },
-/* 3 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
 var select = __webpack_require__(1);
-
-module.exports = select;
-
-/***/ },
-/* 4 */
-/***/ function(module, exports) {
-
-module.exports = __WEBPACK_EXTERNAL_MODULE_4__;
-
-/***/ },
-/* 5 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var button = __webpack_require__(2);
-var select = __webpack_require__(3);
 
 module.exports = {
   button: button,
