@@ -13,7 +13,12 @@ var defaultConfig = {
   module: {
     rules: [
       {
-        test: /\.(js)$/, use: 'babel-loader'
+        test: /\.(js)$/, 
+        use: 'babel-loader',
+        exclude: /node_modules/,
+        include: [
+          path.resolve(__dirname, 'packages')
+        ]
       }
     ]
   }
@@ -47,8 +52,12 @@ if (process.env.NODE_ENV === 'integrated') {
 }
 
 if (process.env.NODE_ENV == 'dist') {
-  defaultConfig.entry = {
-    index: './index.js'
+  defaultConfig.resolve = {
+    mainFiles: ['index'],
+    alias: {
+      //'sugar-button$': path.resolve(__dirname, 'packages', '/sugar-button/index.js'),
+      //'sugar-select$': path.resolve(__dirname, 'packages', '/sugar-select/index.js')
+    }
   }
 }
 

@@ -81,17 +81,15 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 1 */
 /***/ function(module, exports, __webpack_require__) {
 
-"use strict";
-
-
-var button = __webpack_require__(2);
+var button = __webpack_require__(2)
 
 module.exports = {
-	echo: function echo() {
-		button.echo();
+	echo: function(){
+    button.echo();
 		console.log('i am a select');
 	}
-};
+}
+
 
 /***/ },
 /* 2 */
@@ -104,12 +102,9 @@ module.exports = __WEBPACK_EXTERNAL_MODULE_2__;
 /* 4 */
 /***/ function(module, exports, __webpack_require__) {
 
-"use strict";
-
-
 var select = __webpack_require__(1);
 
-module.exports = select;
+module.exports = select
 
 /***/ }
 /******/ ]);

@@ -78,16 +78,14 @@ return /******/ (function(modules) { // webpackBootstrap
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-
+/***/ function(module, exports) {
 
 module.exports = {
-	echo: function echo() {
+	echo: function(){
 		console.log('i am a button');
 	}
-};
+}
+
 
 /***/ },
 /* 1 */,
@@ -95,12 +93,9 @@ module.exports = {
 /* 3 */
 /***/ function(module, exports, __webpack_require__) {
 
-"use strict";
-
-
 var button = __webpack_require__(0);
 
-module.exports = button;
+module.exports = button
 
 /***/ }
 /******/ ]);
