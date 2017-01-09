@@ -1,6 +1,6 @@
 {
   "name": "sugar-select",
-  "version": "0.0.9",
+  "version": "0.1.0",
   "description": "",
   "main": "lib/index.js",
   "module": "index.js",
@@ -12,7 +12,7 @@
     "url": "https://github.com/lynsun/sugarboy/tree/master/packages/select"
   },
   "dependencies": {
-    "sugar-button": "^0.0.9"
+    "sugar-button": "^0.1.0"
   },
   "author": "",
   "license": "ISC"
