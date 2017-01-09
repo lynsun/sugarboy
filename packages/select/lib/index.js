@@ -4,9 +4,9 @@
 	else if(typeof define === 'function' && define.amd)
 		define(["sugar-button"], factory);
 	else if(typeof exports === 'object')
-		exports["select"] = factory(require("sugar-button"));
+		exports["sugar-select"] = factory(require("sugar-button"));
 	else
-		root["select"] = factory(root["sugar-button"]);
+		root["sugar-select"] = factory(root["sugar-button"]);
 })(this, function(__WEBPACK_EXTERNAL_MODULE_2__) {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache

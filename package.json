@@ -1,13 +1,14 @@
 {
   "name": "sugarboy",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "sugarboy test",
-  "main": "./dist/app.js",
+  "main": "./lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "common": "NODE_ENV=common webpack --config build/webpack.config.js --progress",
-    "comp": "NODE_ENV=comp webpack --config build/webpack.config.js --progress",
-    "build": "webpack --config build/webpack.config.js --progress"
+    "integrated": "NODE_ENV=integrated webpack --config build/webpack.config.js --progress",
+    "standalone": "NODE_ENV=standalone webpack --config build/webpack.config.js --progress && node ./build/moveToPkg.js",
+    "dist": "NODE_ENV=dist webpack --config build/webpack.config.js --progress",
+    "build": "npm run integrated && npm run standalone && npm run dist"
   },
   "author": "lynsun",
   "license": "ISC",
@@ -19,6 +20,9 @@
     "atui": "0.0.3",
     "babel-preset-es2015": "^6.18.0"
   },
+  "files": [
+    "lib"
+  ],
   "bugs": {
     "url": "https://github.com/lynsun/sugarboy/issues"
   },

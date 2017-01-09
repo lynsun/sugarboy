@@ -2,11 +2,10 @@ var path = require('path')
 
 var defaultConfig = {
   entry: {
-    button: './packages/button/index.js',
-    select: './packages/select/index.js'
+    index: './index.js'
   },
   output: {
-    path: './dist',
+    path: './lib',
     filename: '[name].js',
     library: '[name]',
     libraryTarget: 'umd'
@@ -20,16 +19,36 @@ var defaultConfig = {
   }
 }
 
-if (process.env.NODE_ENV === 'comp') {
+if (process.env.NODE_ENV === 'standalone') {
+
+  defaultConfig.entry = {
+    'sugar-button': './packages/button/index.js',
+    'sugar-select': './packages/select/index.js'
+  }
+
+  defaultConfig.output.path = './dist';
+
   defaultConfig.externals = {
     'sugar-button':'sugar-button',
     'sugar-select':'sugar-select'
   }
 }
 
-if (process.env.NODE_ENV === 'common') {
+if (process.env.NODE_ENV === 'integrated') {
   defaultConfig.entry = {
-    app: './index.js'
+    'button': './packages/button/index.js',
+    'select': './packages/select/index.js'
+  }
+
+  defaultConfig.externals = {
+    'sugar-button': 'lib/button',
+    'sugar-select': 'lib/select'
+  }
+}
+
+if (process.env.NODE_ENV == 'dist') {
+  defaultConfig.entry = {
+    index: './index.js'
   }
 }
 
