@@ -46,8 +46,8 @@ if (process.env.NODE_ENV === 'integrated') {
   }
 
   defaultConfig.externals = {
-    'sugar-button': 'lib/button',
-    'sugar-select': 'lib/select'
+    'sugar-button': './button',
+    'sugar-select': './select'
   }
 }
 

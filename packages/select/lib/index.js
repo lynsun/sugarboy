@@ -86,7 +86,7 @@ var button = __webpack_require__(2)
 module.exports = {
 	echo: function(){
     button.echo();
-		console.log('i am a select');
+		console.log('i am a select!!!');
 	}
 }
 
